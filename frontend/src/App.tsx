@@ -78,7 +78,7 @@ function App() {
 
       const event = contract.interface.parseLog(receipt.logs[0]);
 
-      alert("Transaction successful " + JSON.stringify(event.args));
+      alert("Transaction successful " + JSON.stringify(event.args[0]));
     } catch (error) {
       alert("Transaction failed");
       console.log(error);
